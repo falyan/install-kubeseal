@@ -3,10 +3,16 @@ Kubeseal for Kubernetes
 
 ## Installing the kubeseal Client
 For Linux x86_64 systems, the client-tool may be installed into /usr/local/bin with the following command:
-
+- Download binary kubeseal
 ```bash
 wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.18.0/kubeseal-0.18.0-linux-amd64.tar.gz
+```
+- extract file binary
+```bash
 tar xfz kubeseal-0.18.0-linux-amd64.tar.gz
+```
+- install binary on bin directory
+```bash
 sudo install -m 755 kubeseal /usr/local/bin/kubeseal
 ```
 
