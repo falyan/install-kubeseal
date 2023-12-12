@@ -41,7 +41,7 @@ now kubeseal on your K8S cluster can be used
 ```bash
 nano secret.yaml
 ```
-- now run ypur command bellow to sealed your secret
+- now run command bellow to sealed your secret
 ```bash
 cat secret.yaml | kubeseal --controller-namespace kube-system --controller-name sealed-secrets-controller --namespace=your-namespace --format yaml > sealed-secret.yaml
 ```
