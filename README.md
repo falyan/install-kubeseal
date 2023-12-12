@@ -22,9 +22,12 @@ sudo install -m 755 kubeseal /usr/local/bin/kubeseal
 
 ## Installing the Custom Controller and CRD for SealedSecret
 Install the SealedSecret CRD, controller on your K8S cluster as follows: 
-
+- Download manifest controller sealed
 ```bash
 wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.18.0/controller.yaml
+```
+- apply your manifest
+```bash
 kubectl apply -f controller.yaml
 ```
 - Check the status of the controller pod
