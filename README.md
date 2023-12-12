@@ -1,5 +1,5 @@
 # install-kubeseal
-Kubeseal for Kubernetes
+Kubeseal for Kubernetes, in this ttorial I assume your Kubernetes have been installed
 
 ## Installing the kubeseal Client
 For Linux x86_64 systems, the client-tool may be installed into /usr/local/bin with the following command:
