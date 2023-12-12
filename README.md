@@ -35,5 +35,20 @@ kubectl get pods -n kube-system | grep sealed-secrets-controller
 
 now kubeseal on your K8S cluster can be used 
 
+## how to use kubeseal on K8S
+
+- create file secret.yaml
+```bash
+nano secret.yaml
+```
+- now run ypur command bellow to sealed your secret
+```bash
+cat secret.yaml | kubeseal --controller-namespace kube-system --controller-name sealed-secrets-controller --namespace=your-namespace --format yaml > sealed-secret.yaml
+```
+- check your sealed-secret.yaml
+```bash
+cat sealed-secret.yaml
+```
+now your secret is sealed !!! 
 ## 🔗 About me
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/falyan-zuril-587585247/)
